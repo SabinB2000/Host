@@ -1,0 +1,83 @@
+.vendor-page {
+    display: flex;
+  }
+  .vendor-content {
+    margin-left: 200px; /* width of sidebar */
+    padding: 1.5rem;
+  }
+  /* Container for the four summary cards */
+  .vd-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+/* Card styling */
+.vd-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .vd-card h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .vd-card p {
+    margin: 0.5rem 0 0;
+    color: #555;
+  }
+  
+  /* Pending cards in orange */
+  .vd-card.pending {
+    border-left: 4px solid #ff8c00;
+  }
+  
+  /* Approved cards in green */
+  .vd-card.approved {
+    border-left: 4px solid #2ecc71;
+  }
+  /* Recent section */
+.vd-recent h2 {
+    margin-top: 2rem;
+  }
+  .vd-recent ul {
+    list-style: none;
+    padding: 0;
+  }
+  .vd-recent li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .vd-recent li .status {
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    color: #fff;
+  }
+  .vd-recent li .status.pending {
+    background: #ff8c00;
+  }
+  .vd-recent li .status.approved {
+    background: #2ecc71;
+  }
+  .vd-recent li a {
+    color: #2d3436;
+    text-decoration: none;
+  }
+  .vd-recent li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .vd-stats {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  

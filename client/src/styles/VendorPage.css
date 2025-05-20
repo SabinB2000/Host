@@ -1,0 +1,25 @@
+.vendor-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #FFF9EC; /* cream */
+  }
+  
+  .vendor-content {
+    flex: 1;
+    padding: 2rem;
+    transition: margin-left 0.2s ease;
+    margin-left: 220px; /* expanded sidebar width */
+  }
+  
+  /* When sidebar is collapsed */
+  .vs-container.collapsed + .vendor-content {
+    margin-left: 60px;
+  }
+  
+  /* On small screens */
+  @media (max-width: 768px) {
+    .vendor-content {
+      margin-left: 60px;
+    }
+  }
+  

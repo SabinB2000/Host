@@ -1,0 +1,97 @@
+.saved-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.saved-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.back-button {
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.place-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.place-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+.place-info {
+  padding: 12px;
+  flex-grow: 1;
+}
+.place-info h3 {
+  margin: 0 0 8px;
+}
+.place-desc {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 6px;
+}
+.place-category {
+  font-size: 13px;
+  font-weight: bold;
+  color: #777;
+}
+.card-actions {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  border-top: 1px solid #eee;
+}
+.remove-btn,
+.nav-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.remove-btn {
+  background: #e74c3c;
+  color: white;
+}
+.nav-btn {
+  background: #17a2b8;
+  color: white;
+}
+.empty-state {
+  text-align: center;
+  margin-top: 50px;
+}
+.explore-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.saved-footer {
+  text-align: center;
+  margin: 40px 0 0;
+  color: #999;
+  font-size: 14px;
+}

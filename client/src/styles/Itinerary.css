@@ -1,0 +1,199 @@
+:root {
+  --primary: #4361ee;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --radius: 8px;
+  --gap: 1rem;
+}
+
+.itinerary-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--gap);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* ---------- TABS ---------- */
+.itinerary-tabs {
+  display: flex;
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+}
+
+.desktop-tabs .tab-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+  transition: background 0.3s, color 0.3s;
+}
+
+.desktop-tabs .tab-btn.active,
+.desktop-tabs .tab-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.mobile-tabs {
+  display: none;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* ---------- FORM CARD ---------- */
+.form-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  margin-bottom: 2rem;
+}
+
+.form-heading {
+  margin-bottom: 1rem;
+  color: var(--primary);
+  font-size: 1.4rem;
+}
+
+.form-label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+/* place row */
+.place-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.place-input {
+  flex: 1;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  cursor: pointer;
+  border-radius: var(--radius);
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-square {
+  padding: 0.4rem;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* ---------- LIST VIEW & CARDS ---------- */
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.itinerary-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.card-header:hover {
+  background: rgba(67, 97, 238, 0.05);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-detail {
+  padding: 0 1.5rem 1rem;
+  list-style: disc inside;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  .desktop-tabs {
+    display: none;
+  }
+  .mobile-tabs {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--card-bg);
+    padding: 0.5rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+    z-index: 1000;
+  }
+  .form-card,
+  .list-view {
+    margin-bottom: 5rem; /* make room for bottom nav */
+  }
+}

@@ -1,0 +1,59 @@
+/* ✅ Updated Recent Searches CSS */
+.recent-searches {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7); /* Darker background for visibility */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .recent-searches h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffcc00;
+  }
+  
+  .recent-searches ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .recent-searches li {
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .recent-searches li:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .recent-searches a {
+    text-decoration: none;
+    color: #ff8c00;
+    font-weight: bold;
+  }
+  
+  .recent-searches a:hover {
+    color: #ffa500;
+  }
+  
+  /* ✅ Ensuring It Doesn't Overlap with Sidebar */
+  @media screen and (max-width: 768px) {
+    .recent-searches {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+  

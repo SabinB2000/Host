@@ -1,0 +1,40 @@
+/* src/index.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;    /* prevent horizontal scroll */
+  overflow-y: auto;      /* allow vertical scroll */
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; 
+  position: relative;
+  z-index: 1;
+}
+/* A soft cream background for the whole app */
+body, .main-content, .vendor-content {
+  background-color: #e9e5d9;
+}
+
+.main-content,
+.vendor-content {
+  background-color: #e9e5d9;
+}

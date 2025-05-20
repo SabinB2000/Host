@@ -1,0 +1,110 @@
+/* Darker sidebar to contrast the cream background */
+.vs-container {
+    position: fixed;
+    top: 0; left: 0;
+    width: 220px;
+    height: 100vh;
+    background: #1b1f23; /* dark charcoal */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.2s ease;
+    z-index: 100;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+  }
+  
+  /* Collapsed state */
+  .vs-container.collapsed {
+    width: 60px;
+  }
+  
+  /* Toggle button */
+  .vs-toggle {
+    background: none;
+    border: none;
+    color: #bbb;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  .vs-container.collapsed .vs-toggle {
+    transform: rotate(180deg);
+  }
+  
+  /* Links container */
+  .vs-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  /* Individual link */
+  .vs-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s, color 0.2s;
+  }
+  .vs-link:hover {
+    background: #2e3136;
+    color: #fff;
+  }
+  /* Active link highlight */
+  .vs-link.active {
+    background: #ff8c00; /* orange accent */
+    color: #1b1f23;
+  }
+  
+  /* Icon and text */
+  .vs-icon {
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+  }
+  .vs-text {
+    white-space: nowrap;
+  }
+  
+  /* Hide text when collapsed */
+  .vs-container.collapsed .vs-text {
+    display: none;
+  }
+  .vs-container.collapsed .vs-icon {
+    margin: 0;
+  }
+  
+  /* Logout button */
+  .vs-logout {
+    background: #d63031; /* red */
+    border: none;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    margin: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s;
+  }
+  .vs-logout:hover {
+    background: #e17055;
+  }
+  .vs-container.collapsed .vs-logout .vs-text {
+    display: none;
+  }
+  .vs-container.collapsed .vs-logout {
+    justify-content: center;
+    padding: 0.75rem 0;
+  }
+  
+  /* Responsive: always collapsed on small screens */
+  @media (max-width: 768px) {
+    .vs-container {
+      width: 60px;
+    }
+  }
+  

@@ -1,0 +1,54 @@
+/* src/styles/UserDashboard.css */
+.dashboard-page {
+    padding: 40px 20px;
+    background-color: #fff8e7; /* Cream background */
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .dashboard-section {
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-section h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+  }
+  
+  .dashboard-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dashboard-section li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .dashboard-section li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Loading and error states */
+  .loading-screen, .error-screen {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5rem;
+  }
+  

@@ -1,0 +1,191 @@
+/* src/styles/AdminLayout.css */
+
+/* Overall admin layout uses flex: sidebar on left, content on right */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  margin: 0; 
+  background-color: #f5f5f5; 
+  color: #000;
+}
+
+/* Sidebar (expanded) */
+.admin-sidebar {
+  background-color: #343a40;
+  width: 220px;
+  min-height: 100vh;
+  transition: width 0.3s ease;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+  border-right: 1px solid #ccc; /* subtle divider line */
+  z-index: 1;
+}
+
+/* Collapsed sidebar */
+.admin-sidebar.collapsed {
+  width: 60px;
+}
+
+/* Sidebar header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #fff;
+}
+
+/* Toggle button */
+.collapse-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Sidebar menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin: 0;
+}
+
+.sidebar-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.sidebar-menu li a svg {
+  margin-right: 0.5rem;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #495057;
+}
+
+/* Active menu item highlight */
+.sidebar-menu li.active a {
+  border-left: 4px solid #007bff;
+  background-color: #495057;
+  padding-left: calc(1rem - 4px);
+}
+
+/* Hide text labels when collapsed */
+.admin-sidebar.collapsed .sidebar-menu li a span {
+  display: none;
+}
+
+/* Main content area on the right */
+.admin-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #fff;
+  color: #000;
+  overflow-x: hidden; 
+}
+
+/* Card container used in admin pages */
+.admin-card {
+  background-color: #e8aa69;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Table styling */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+  color: #000;
+}
+
+.admin-table th {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.error-text {
+  color: red;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Responsive table for small screens */
+@media (max-width: 768px) {
+  .admin-table,
+  .admin-table thead,
+  .admin-table tbody,
+  .admin-table th,
+  .admin-table td,
+  .admin-table tr {
+    display: block;
+  }
+
+  .admin-table tr {
+    margin-bottom: 1rem;
+  }
+
+  .admin-table th {
+    display: none;
+  }
+
+  .admin-table td {
+    border: none;
+    position: relative;
+    padding-left: 45%;
+  }
+
+  .admin-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 40%;
+    padding-left: 0.5rem;
+    font-weight: bold;
+  }
+}

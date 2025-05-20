@@ -1,0 +1,7 @@
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjQyZWQ1YjQxYTczY2ZjZjI1YmYwYSIsImlhdCI6MTc0MTYzMDE0NywiZXhwIjoxNzQxNjMzNzQ3fQ.5sYlxLXKa2B6CXYr9e8BfCF3VPzt8uhTzp7nFye-M5g"
+
+admin token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTIzNzM1MWY1NTYxNDhkMTE0ZDcwNiIsImlhdCI6MTc0Mjg3OTE0NSwiZXhwIjoxNzQyOTY1NTQ1fQ.Pek0rbFQx9dvEDrcdOeVYJd_joiCINcdPUbLbvCqZiI"
+{
+  "email": "admin@guidenepal.com",
+  "password": "admin123"
+}

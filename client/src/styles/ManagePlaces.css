@@ -1,0 +1,19 @@
+.vendor-page {
+    display: flex;
+  }
+  .vendor-content {
+    margin-left: 200px;
+    padding: 1.5rem;
+  }
+  .vendor-content h1 {
+    margin-bottom: 1rem;
+  }
+  .vendor-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  .vendor-content li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  

@@ -1,0 +1,44 @@
+body {
+    background-color: #fff8e7 !important;
+  }
+.admin-users-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .admin-users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .admin-users-table th,
+  .admin-users-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .admin-users-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #b52d3e;
+  }
+  

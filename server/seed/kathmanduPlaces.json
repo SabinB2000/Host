@@ -1,0 +1,83 @@
+[
+    {
+      "name": "Boudhanath Stupa",
+      "description": "One of the largest spherical stupas in Nepal, a UNESCO World Heritage Site.",
+      "latitude": 27.7215,
+      "longitude": 85.3620,
+      "category": "heritage",
+      "order": 1
+    },
+    {
+      "name": "Pashupatinath Temple",
+      "description": "Sacred Hindu temple complex on the banks of the Bagmati River.",
+      "latitude": 27.7100,
+      "longitude": 85.3485,
+      "category": "heritage",
+      "order": 2
+    },
+    {
+      "name": "Thamel Market",
+      "description": "Bustling tourist district full of shops, cafés & live music.",
+      "latitude": 27.7156,
+      "longitude": 85.3096,
+      "category": "market",
+      "order": 3
+    },
+    {
+      "name": "Swayambhunath (Monkey Temple)",
+      "description": "Ancient religious complex atop a hill with panoramic city views.",
+      "latitude": 27.7149,
+      "longitude": 85.2900,
+      "category": "heritage",
+      "order": 4
+    },
+    {
+      "name": "Garden of Dreams",
+      "description": "A neo-classical historical garden tucked away from the city bustle.",
+      "latitude": 27.7125,
+      "longitude": 85.3176,
+      "category": "park",
+      "order": 5
+    },
+    {
+      "name": "Patan Durbar Square",
+      "description": "Historic palace complex in Lalitpur, known for its Newar architecture.",
+      "latitude": 27.6743,
+      "longitude": 85.3240,
+      "category": "heritage",
+      "order": 6
+    },
+    {
+      "name": "Thamel Viewpoint Cafe",
+      "description": "Popular café offering rooftop views over Thamel and the Himalayas.",
+      "latitude": 27.7158,
+      "longitude": 85.3099,
+      "category": "cafe",
+      "order": 7
+    },
+    {
+      "name": "National Museum of Nepal",
+      "description": "Displays Nepal’s art, culture, and natural history.",
+      "latitude": 27.7030,
+      "longitude": 85.3242,
+      "category": "museum",
+      "order": 8
+    },
+    {
+      "name": "Garden of Dreams Teahouse",
+      "description": "Charming teahouse within the peaceful Garden of Dreams.",
+      "latitude": 27.7127,
+      "longitude": 85.3178,
+      "category": "cafe",
+      "order": 9
+    },
+    {
+      "name": "Kantipath Shopping",
+      "description": "Main commercial street lined with local boutiques and street vendors.",
+      "latitude": 27.7090,
+      "longitude": 85.3150,
+      "category": "market",
+      "order": 10
+    }
+  ]
+  

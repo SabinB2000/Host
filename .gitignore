@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+client/node_modules/
+
+# Caches & build output
+.cache/
+build/
+dist/
+out/
+
+# Environment files
+.env
