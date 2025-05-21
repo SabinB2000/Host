@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axiosInstance from "../utils/axiosConfig";
 import Swal from "sweetalert2";
-import axios from "axios";
+import api from "../utils/axiosConfig";
 import "../styles/Explore.css";
 
 const UNSPLASH_ACCESS_KEY = process.env.REACT_APP_UNSPLASH_ACCESS_KEY;

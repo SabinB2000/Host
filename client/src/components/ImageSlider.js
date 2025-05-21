@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import api from "../utils/axiosConfig";
 import "../styles/ImageSlider.css";
 
 export default function ImageSlider({

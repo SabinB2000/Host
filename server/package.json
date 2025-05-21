@@ -4,29 +4,25 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js",
     "dev": "nodemon server.js",
-    "seed:places": "node ./seed/seedPlaces.js"
+    "seed:places": "node ./seed/seedPlaces.js",
+    "heroku-postbuild": "cd client && yarn install && yarn build"
   },
   "dependencies": {
     "axios": "^1.9.0",
     "bcrypt": "^5.1.1",
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-async-handler": "^1.2.0",
-    "fs": "^0.0.1-security",
     "google-translate-api-x": "^10.7.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.5",
     "multer": "^1.4.5-lts.1",
     "node-fetch": "^3.3.2",
     "nodemailer": "^6.10.1",
-    "path": "^0.12.7",
     "pexels": "^1.4.0",
-    "react-icons": "^5.5.0",
     "redis": "^4.7.0"
   },
   "devDependencies": {

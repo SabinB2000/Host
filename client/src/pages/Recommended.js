@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import api from "../utils/axiosConfig";
 import { LoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 import "../styles/Recommended.css";
 

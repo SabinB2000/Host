@@ -7,9 +7,7 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { useAuth } from "./contexts/AuthContext";
-import axios from "axios";
-
-// Public Pages
+import api from "./utils/axiosConfig";// Public Pages
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";

@@ -1,10 +1,17 @@
 const { createClient } = require("redis");
-const client = createClient({ url: process.env.REDIS_URL || "redis://127.0.0.1:6379" });
-client.on("error", console.error);
+require("dotenv").config();
+
+const REDIS_URL = process.env.REDIS_URL;
+if (!REDIS_URL) {
+  console.error("❌ REDIS_URL not set in environment");
+  process.exit(1);
+}
+
+const client = createClient({ url: REDIS_URL });
+client.on("error", err => console.error("Redis Client Error:", err));
 client.connect();
 
 async function saveOtp(email, otp) {
-  // store with 10‑minute TTL
   await client.set(`otp:${email}`, otp, { EX: 600 });
 }
 
