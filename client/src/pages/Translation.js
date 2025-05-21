@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import api from "../utils/axiosConfig";
+import axios from 'axios';
 import Tesseract from "tesseract.js";
 import { FaExchangeAlt, FaMicrophone, FaPlay, FaStop, FaVolumeUp, FaImage, FaTimes } from "react-icons/fa";
 import { IoIosSwap } from "react-icons/io";

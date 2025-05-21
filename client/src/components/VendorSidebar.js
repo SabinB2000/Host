@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import api from "../utils/axiosConfig";
+import axios from 'axios';
 import Swal from "sweetalert2";
 import axiosInstance from "../utils/axiosConfig";
 import "../styles/VendorSidebar.css";

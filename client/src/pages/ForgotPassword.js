@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import api from "../utils/axiosConfig";
+import axios from 'axios';
 import Swal from "sweetalert2";
 import { motion } from "framer-motion";
 import "../styles/ForgotPassword.css";
