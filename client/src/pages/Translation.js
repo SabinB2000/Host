@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import axios from "axios";
 import Tesseract from "tesseract.js";
 import { FaExchangeAlt, FaMicrophone, FaPlay, FaStop, FaVolumeUp, FaImage, FaTimes } from "react-icons/fa";
 import { IoIosSwap } from "react-icons/io";
@@ -63,7 +63,7 @@ const Translation = () => {
     if (!inputText.trim()) return;
 
     try {
-      const response = await axios.post("/api/translate", {
+      const response = await axios.post("http://localhost:5000/api/translate", {
         text: inputText,
         from: sourceLang,
         to: targetLang,
@@ -156,7 +156,7 @@ const Translation = () => {
     if (!text.trim()) return;
 
     try {
-      const response = await axios.post("/api/translate", {
+      const response = await axios.post("http://localhost:5000/api/translate", {
         text: text,
         from: "auto",
         to: "en",

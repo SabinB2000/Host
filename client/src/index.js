@@ -4,7 +4,8 @@ import { BrowserRouter } from "react-router-dom"; // ✅ Import BrowserRouter
 import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import api from "./utils/axiosConfig";import { AuthProvider } from "./contexts/AuthContext";
+import axios from "axios";
+import { AuthProvider } from "./contexts/AuthContext";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
